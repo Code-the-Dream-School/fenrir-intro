@@ -15,6 +15,8 @@ This assignment will teach you the following:
 
 ### Getting Started:
 
+Note:  The images show forking of eridanus-intro.  Please use fenrir-repo for this class.  
+
 Fork this GitHub repository to create your own working version:
 
 ![Fork Assignment: Step 1](../assets/fork-assignment/fork-step-1.png)
