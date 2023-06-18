@@ -8,6 +8,8 @@
     <meta>
 
 </head>
+
+
 <body>
     Chelin Park
     <section>
@@ -36,9 +38,27 @@
         </P>
     </section>
     C:\Users\pchin\OneDrive\바탕 화면\Coding\Intro\2.1\fenrir-intro\index.html    
-    <footer> </footer>
-    <script src = "js/index.js"></script>
+    
+    <section>
+        <h2>Leave a Message</h2>
+        <form id="name" name="leave_message">
+            <label>Users Name</label><input type="text" id="usersName" required="true"><br>
+            <label>Users E-mail</label><input type="email" id="usersEmail" required="true"><br>
+            <label>Users Message</label><textarea type="name" id="usersMessage" required="true"></textarea><br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </section>
 
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section>
+
+   
+    <footer> 
+        <script src = "js/index.js"></script>
+    </footer>
     
 </body>
+
 </html>
