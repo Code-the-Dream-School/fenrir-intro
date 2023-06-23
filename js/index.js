@@ -30,10 +30,13 @@ messageForm.addEventListener('submit', function(event) {    //messageForm의 변
 
 
 
+    //here is where my question is...//
+
 
     //removeButton이란 변수에 button selection을 넣는다.
-    let removeButton = document.getElementById("removal");
-    removeButton.addEventListener("remove",function(event) {
+    let removeButton = document.getElementById("removal");      //I think I did in right way that DOM selection by id "removal" which I assigned to remove button?//
+
+    removeButton.addEventListener("remove",function(event) {    //And I was declared alarm pops up for testing "asdf"//
         //messageList변수에 removeButton라는 변수의 값을 '입양'시킨다. 여기서는 ul섹터 안에 들어가게 되는 것. + 값을 지운 것을 반영해야 한다.
         alert("asdf");
         //newMessage.innerHTML.remove();
