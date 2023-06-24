@@ -40,8 +40,7 @@ messageForm.addEventListener('submit', function(event) {    //messageForm의 변
             const entry = removeButton.parentNode;
             //entry변수를 remove 해서 newMessage의 값을 지운다.
             entry.remove();
-            //alert("asdf");
-            //newMessage.innerHTML.remove();
+            
         });
 
     //messageList element에 newMessage와 remove Button의 값을넣어준다.
