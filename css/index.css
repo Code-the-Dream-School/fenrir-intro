@@ -1,4 +1,3 @@
-
 a {
     text-decoration: none;
 }
@@ -92,9 +91,12 @@ footer {
                 margin-bottom: 3em; } }
                 
 .narrow-content {
-  padding: 0 2.5em; }
+  padding: 0 2.5em; 
+}
   @media screen and (max-width: 768px) {
     .narrow-content {
-      padding: 0; } }
+      padding: 0; } 
+    }
+
       
      

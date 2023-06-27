@@ -41,7 +41,10 @@ messageForm.addEventListener('submit',(event) => {
     const removeButton = document.createElement('button');
     removeButton.type = 'button';
     removeButton.innerText = 'Remove'
+<<<<<<< HEAD
     removeButton.classList.add('custom-button')
+=======
+>>>>>>> 5947964f889a9ed499c4db45b8d230f89f18e093
     removeButton.addEventListener('click', () => {
         const entry = removeButton.parentNode;
           entry.remove();
@@ -49,6 +52,7 @@ messageForm.addEventListener('submit',(event) => {
     });
   
     newMessage.appendChild(removeButton);
+<<<<<<< HEAD
     //edit button
     const editButton = document.createElement('button');
     editButton.type = 'button';
@@ -58,6 +62,15 @@ messageForm.addEventListener('submit',(event) => {
         const newMessageText = prompt('Enter the new message: ');
         if(newMessageText !== null) {
             const messageSpan = newMessage.querySelector('span');
+=======
+    
+    const editButton = document.createElement('button');
+    editButton.type = 'button';
+    editButton.innerText = 'Edit Message';
+    editButton.addEventListener('click', () => {
+        const newMessageText = prompt('Enter the new message: ');
+        if(newMessageText !== null) {
+>>>>>>> 5947964f889a9ed499c4db45b8d230f89f18e093
             messageSpan.textContent = newMessageText;
         }
     });
@@ -68,3 +81,7 @@ messageForm.addEventListener('submit',(event) => {
     messageForm.reset ();
 });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5947964f889a9ed499c4db45b8d230f89f18e093
