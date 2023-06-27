@@ -2,15 +2,31 @@
 a {
     text-decoration: none;
 }
+.container-wrap{
+  display:flex;
+}
 
 .firstCol{
+    position:fixed;
+    width:300px;
+    height:100vh;
+    overflow:auto;
     background-color:rgb(240, 235, 235);
-    text-align: center;
-    
+    text-align: center;  
+}
 
+
+.myEmail {
+  display:inline-flex;
+}
+form{
+  display:inline-block;
 }
 .secCol{
     margin-top:300px;
+    margin-left:300px;
+    height:100vh;
+    overflow:auto;
 
 }
 
@@ -20,7 +36,21 @@ a {
 a{
     color:gray;
 }
- .btn.btn-learn , .btn-send-message{
+.custom-button {
+  background-color:rgb(240, 235, 235);
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left:20px;
+}
+
+.custom-button:hover {
+  background-color: #827e7e;
+}
+ .btn-send-message{
     color: #000;
     border: 1px solid #000;
     background: transparent !important; }
@@ -45,6 +75,14 @@ a{
             letter-spacing: 5px;
             line-height: 1.8;
             position: relative; }
+form input {
+  margin-bottom:10px;
+}
+footer {
+  background-color:rgb(240, 235, 235);
+  height:50px;
+  
+}
 
             .headings span {
               display: block; }
@@ -52,6 +90,7 @@ a{
             @media screen and (max-width: 768px) {
               .headings {
                 margin-bottom: 3em; } }
+                
 .narrow-content {
   padding: 0 2.5em; }
   @media screen and (max-width: 768px) {
