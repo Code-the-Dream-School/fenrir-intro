@@ -1,0 +1,207 @@
+.wrapper{
+  width: 350px;
+  margin-left: 7%;
+}
+
+.display .GAME_LEVELS{
+  display:none;
+  margin-top:2px;
+  position:relative;
+}
+.youlost{
+  display:none;
+}
+.youwon{
+  display:none;
+}
+#restart{
+  display:none;
+  padding:10px;
+  margin-bottom:30px;
+  margin-top:-20px;
+  font-size:1.2em;
+  background-color:lightskyblue;
+  color:blueviolet;
+  position:relative;
+  margin-left:43%;
+}
+.timer{
+  display:none;
+}
+.game{
+  width:950px;
+  margin-bottom:auto;
+  margin-left:25%;
+/*   display:none; */
+  /*display: no-repeat;*/
+
+}
+
+#start{
+  padding:10px;
+  margin-bottom:30px;
+  margin-top:100px;
+  font-size:1.2em;
+  background-color:lightskyblue;
+  color:black;
+  position:absolute;
+  margin-left:40%;
+
+}
+.WINNER{
+	display:none;
+	  background: rgb(160, 64, 64);
+	  font-size:40px;
+}
+
+h1{
+  font-family:comic sans Ms;
+  text-align:center;
+  color:WHITE;
+}
+h2 {
+  font-family: Bradley Hand;
+  text-align:center;
+  color:rgb(32, 236, 14);
+  font-size:38px;
+}
+h3 {
+  font-family: Bradley Hand;
+  text-align:center;
+  color:gray;
+}
+input{
+  margin-left:43%;
+}
+.ln {
+  margin-top:40px;
+}
+
+body{
+  background-image:url(bg.png); 
+}
+
+button {
+  margin-left:45%;
+  margin-right:45%;
+
+}
+table {
+  background-image:url("bg.png");
+  
+  width:300px;
+  table-layout: fixed;
+  border-spacing: 0;
+  
+}
+
+#secs{
+  color:darkorchid;
+  font-size:30px;
+}
+.background td { padding: 0;
+  
+}
+.lava {
+  background: rgb(255, 100, 100);
+  
+}
+.wall {
+  background-image:url(index.png)
+  
+}
+
+.actor  {
+  position: absolute;
+  
+}
+.coin   {
+  background-image:url(money.png);
+  
+}
+.dragon {
+  background-image: url(fatdragon2.jpg)
+ 
+}
+@keyframes walk{
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.player {
+
+ background-image:url(mario4.gif); 
+/*  background-repeat:no-repeat; */
+ /*background-position:27px px;  */
+ animation: walk 2s infinite;  
+ 
+}
+.evil{
+  background-image:url('bad.png')
+}
+.princess {
+  background-image:url(princess.jpg);
+  height:20px;
+  width:20px;
+}
+
+.game {
+
+  overflow: hidden;
+  max-width: 650px;
+  max-height: 450px;
+  position: relative;
+}
+.playerInfo{
+    display:flex;
+    margin-left: -25%;
+
+
+}
+ .coinAmount, .lives{
+	width:280px;
+	height:40px;
+	margin-left:25%;
+	font-size:30px;
+	font-weight:bold;
+	text-align:left;
+
+
+}
+
+
+.lost .player {
+  background: rgb(160, 64, 64);
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
+.messages{
+  text-align: center;
+  color:white;
+}
+.finish{
+  display:none;
+  background-image:url("finish.png");
+  background-repeat:no-repeat;
+  height:1920px;
+  width:100%
+}
+.saved{
+  max-width:100%;
+  margin-left:25%;
+  margin-right:35%;
+  display:contents;
+}
+#TotalLives, #coinAmount{
+  width:30%;
+  height:80px;
+  margin-left:20%;
+  font-size:30px;
+  /*background-color: aquamarine;*/
+}
+/* .coinAmount{
+  width:auto;
+  height:auto;
+  background-color:aquamarine
+} */

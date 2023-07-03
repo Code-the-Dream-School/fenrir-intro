@@ -1,0 +1,170 @@
+div {
+  width:90px;
+  height:150px;
+  background-color:lightblue;
+  border:5px solid black;
+  padding:62px;
+  display: inline-block;
+  opacity:.9;
+  margin-bottom:10px;
+  margin-left:10px;
+}
+h1 {
+  text-align:center;
+  color:purple;
+  margin-top:50px;
+  font-size:35px;
+  font-weight:bold;
+  text-align:center;
+  width:750px;
+  margin-left:80px;
+}
+h3 {
+  text-align:center;
+  background-color:pink;
+  color:yellow;
+  text-decoration:bold;
+  font-size:30px;
+  width:840px;
+  margin-left:10px;
+}
+body  {
+  background-color:darkslateblue;
+}
+.score {
+  color:#007bff;
+}
+ .matches {
+ color:purple;
+ background-color:black;
+ border-radius:30px;
+ opacity:.7;
+ margin-top: -30px;
+}
+.pic{
+  background-color:#007bff;
+  margin-left:-63px;
+  margin-top:-65px;
+  height:145px;
+  width:125px;
+}
+.newgame{
+  font-size:30px;
+  color:blue;
+  background-color:lightgreen;
+  display:block;
+  margin-left:370px;
+}
+.views{
+  display:flex;
+  margin-left:25px;
+}
+.blueChatter {
+  background-image:url('chatter_Blue.gif');
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+  background-size:90px;
+}
+.pony {
+  background-image:url('pony.png');
+  background-repeat: no-repeat;
+  background-position: -10px 0;
+  background-size:135px;
+}
+.orangeChatter {
+  background-image:url('chatter_Orange.gif');
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+  background-size:90px;
+}
+.greenChatter {
+  background-image:url('chatter_Green.gif');
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+  background-size:90px;
+}
+.angry4 {
+  background-image:url('angry4.gif');
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+  background-size:110px;
+}
+.angry3 {
+  background-image:url('angry3.gif');
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+  background-size:110px;
+}
+
+.angry2 {
+  background-image:url('angry2.gif');
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+  background-size:110px;
+}
+
+.angry{
+  background-image:url('angry.gif');
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+    background-size:90px;
+}
+
+.monkey {
+  background-image:url('monkey.png');
+  background-repeat: no-repeat;
+  background-position: 8px 0;
+  background-size:110px;
+}
+.star {
+  background-image:url('cat.png');
+  background-repeat: no-repeat;
+  background-position: 20px 0;
+}
+.devil {
+  background-image:url('devil.png');
+  background-repeat: no-repeat;
+  background-position: -3px 0;
+    background-size:130px;
+}
+.bigsmile {
+  background-image:url('bigsmile.png');
+  background-repeat: no-repeat;
+  background-position: -2px 0;
+    background-size:130px;
+}
+.cry {
+  background-image:url('cry.png');
+  background-repeat: no-repeat;
+  background-position: -4px 0;
+    background-size:135px;
+}
+.angel {
+  background-image:url('angel.png');
+  background-size:110px;
+  background-repeat: no-repeat;
+  background-position: 8px 0;
+  
+}
+.wink {
+  background-image:url('wink.png');
+  background-repeat: no-repeat;
+  background-position:8px 0;
+  background-size:110px;
+}
+.kitty{
+  background-image:url('kitty.gif');
+  background-color:#007bff;
+  height:50px;
+  margin-left:-20px;
+  display:flex;
+}
+.won{
+  background-image:url('dots.png');
+}
+#timer{
+  text-align:center;
+}
+#canvas{
+  margin-left: 30px;
+}
