@@ -69,3 +69,13 @@ newMessage.appendChild(editButton);
 messageList.appendChild(newMessage);
 messageForm.reset();
 });
+
+function toggleFirstCol() {
+    const firstCol = document.querySelector('.firstCol');
+    firstCol.classList.toggle('show-firstCol');
+  }
+
+  const links = document.querySelectorAll('.firstCol a');
+  links.forEach(link => {
+    link.addEventListener('click', toggleFirstCol);
+  });

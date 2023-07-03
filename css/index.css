@@ -1,102 +1,343 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+}
+
+p, h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 a {
-    text-decoration: none;
-}
-.container-wrap{
-  display:flex;
+  text-decoration: none;
+  color: gray;
 }
 
-.firstCol{
-    position:fixed;
-    width:300px;
-    height:100vh;
-    overflow:auto;
-    background-color:rgb(240, 235, 235);
-    text-align: center;  
+.container-wrap {
+  height: 150vh;
+  overflow-y: scroll;
+  width: 100%;
 }
 
+.intro {
+  margin-top: 200px;
+}
+
+.firstCol {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgb(240, 235, 235);
+  text-align: center;
+}
 
 .myEmail {
-  display:inline-flex;
-}
-form{
-  display:inline-block;
-}
-.secCol{
-    margin-top:300px;
-    margin-left:300px;
-    height:100vh;
-    overflow:auto;
-
+  margin-bottom: 10px;
+  display: inline-flex;
 }
 
-.name{
-    margin-top:40px;
+#messages {
+  margin-top: 50px;
 }
-a{
-    color:gray;
+
+form {
+  display: inline-block;
 }
+
+.secCol {
+  margin-left: 300px;
+  height: 100%;
+  padding-left: 10px;
+  overflow: auto;
+}
+
+.name {
+  margin-top: 40px;
+}
+
 .custom-button {
-  background-color:rgb(240, 235, 235);
+  background-color: rgb(240, 235, 235);
   color: black;
   padding: 5px 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-right: 5px;
-  margin-left:20px;
+  margin-left: 20px;
 }
 
 .custom-button:hover {
   background-color: #827e7e;
 }
- .btn-send-message{
-    color: #000;
-    border: 1px solid #000;
-    background: transparent !important; }
 
-    .about{
-        margin-top:40px;
-    }
-    .heading-meta {
-        margin-bottom: 15px;
-        display: block;
-        font-size: 10px;
-        text-transform: uppercase;
-        color: #999999;
-        font-weight: 500;
-        letter-spacing: 5px; }
+.btn-send-message {
+  color: #000;
+  border: 1px solid #000;
+  background: transparent !important;
+}
 
-        .headings {
-            font-size: 18px;
-            margin-bottom: 4em;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            line-height: 1.8;
-            position: relative; }
+.aboutIntro {
+  margin-right: 20px;
+  padding-right: 40px;
+  font-size: 16px;
+}
+
+.about {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#contact {
+  margin-top: 50px;
+}
+
+.heading-meta {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.headings {
+  font-size: 18px;
+  margin-bottom: 4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+  position: relative;
+}
+
 form input {
-  margin-bottom:10px;
-}
-footer {
-  background-color:rgb(240, 235, 235);
-  height:50px;
-  
+  margin-bottom: 10px;
 }
 
-            .headings span {
-              display: block; }
-              
-            @media screen and (max-width: 768px) {
-              .headings {
-                margin-bottom: 3em; } }
-                
-.narrow-content {
-  padding: 0 2.5em; 
+.mario, .kitty, .war {
+  height: 50px;
 }
-  @media screen and (max-width: 768px) {
-    .narrow-content {
-      padding: 0; } 
-    }
 
-      
-     
+.hide-firstCol {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .firstCol {
+    width: 50.67%;
+  }
+  .secCol{
+    width:100px;
+    margin-right:30px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .firstCol {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .secCol {
+    width:240px;
+    margin-top: 20px;
+    margin-left:200px;
+    margin-right:440px;
+  }
+}
+
+@media (max-width: 822px) {
+  .secCol {
+    margin-right: 50px;
+  }
+}
+
+.headings span {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .headings {
+    margin-bottom: 3em;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+}
+
+p, h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.container-wrap {
+  height: 150vh;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.intro {
+  margin-top: 200px;
+}
+
+.firstCol {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgb(240, 235, 235);
+  text-align: center;
+}
+
+.myEmail {
+  margin-bottom: 10px;
+  display: inline-flex;
+}
+
+#messages {
+  margin-top: 50px;
+}
+
+form {
+  display: inline-block;
+}
+
+.secCol {
+  margin-left: 300px;
+  height: 100%;
+  padding-left: 10px;
+  overflow: auto;
+}
+
+.name {
+  margin-top: 40px;
+}
+
+.custom-button {
+  background-color: rgb(240, 235, 235);
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 20px;
+}
+
+.custom-button:hover {
+  background-color: #827e7e;
+}
+
+.btn-send-message {
+  color: #000;
+  border: 1px solid #000;
+  background: transparent !important;
+}
+
+.aboutIntro {
+  margin-right: 20px;
+  padding-right: 40px;
+  font-size: 16px;
+}
+
+.about {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#contact {
+  margin-top: 50px;
+}
+
+.heading-meta {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.headings {
+  font-size: 18px;
+  margin-bottom: 4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+  position: relative;
+}
+
+form input {
+  margin-bottom: 10px;
+}
+
+.mario, .kitty, .war {
+  height: 50px;
+}
+
+.hide-firstCol {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .firstCol {
+    width: 50.67%;
+  }
+  .secCol{
+    width:100px;
+    margin-right:30px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .firstCol {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .secCol {
+    width:240px;
+    margin-top: 20px;
+    margin-left:200px;
+    margin-right:440px;
+  }
+}
+
+@media (max-width: 822px) {
+  .secCol {
+    margin-right: 50px;
+  }
+}
+
+.headings span {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .headings {
+    margin-bottom: 3em;
+  }
+}
+
+@media (min-width: 474px) and (max-width: 778px) {
+  .secCol {
+    margin-left:40%;
+    width:60%;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = 'utf-8'>
+    <script src="jquery-3.3.1.js"></script> 
+    <link rel="stylesheet" href="cheapmario.css">
+    <script src="game_levels.js"></script>
+</head>
+<body>
+    <div class = 'wrapper'>
+      <div class = 'playerInfo'>
+        <h4 id = 'coinAmount'>Coin total:</h4>
+        <h4 id = 'world' data-world = '1'>World: <span id = 'world-span'></span>/5</h4>
+        <!-- <button id = 'pause'>Pause</button> -->
+        <h4 id = 'TotalLives' data-lives = '4'>Total Lives <span id="lives-span"></span></h4>
+      </div>
+      <div class = 'saved'>
+        <h2 class = 'WINNER'>YOU SAVED THE PRINCESS!!!</h2>
+        <div class = 'pic'>
+           <h1 class = 'finish'></h1>
+        </div>
+      </div>
+  <h2 class = 'youlost'>You Died!</h2>
+  <h2 class = 'timer'>You Won!</h2>
+  <button id="start">Start Game !</button>
+
+     <script src="15_game.js"></script> 
+     <script>
+       runGame(GAME_LEVELS, DOMDisplay);
+     </script>
+    </div>
+  </body>
+</html>
