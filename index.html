@@ -19,8 +19,15 @@
 </head>
 
 <body>
-    <header>
-        <section id='about'>
+    <header> 
+        <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li> 
+              <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </nav>
+        <section id="about">
             <h1>"About"</h1>
             <p>Hello, I am Sasha. I love coding, and making life brighter, simpler and kinder</p>
 
@@ -29,24 +36,29 @@
             </div>
             
         </section>
-        <section id='experience'>
+        <section id="experience">
         <h2>"Experience"</h2>
-        <p>My experience is diverse. But now my goal is to explore a new field - programming</p>
+        <div class="experience-container">
+            <ul>
+                <li>My experience is diverse</li>
+                <li>My goal is to explore a new field - programming</li>
+            </ul>
+        </div>
         </section>
     </header>
-    <section id='skills'>
+    <section id="skills">
         <h3>"Skills"</h3>
         <ul></ul>    
     </section>
-    <section id='connect'>
-        <h3>"Connect"</h3>
+    <section id="contact">
+        <h3>"Contact"</h3>
         <ul>
             <li><a href="mailto:adams41191@yahoo.com">Email</a></li>
         </ul>
         <p>SashaFoxx(gitHub)</p>
         <a href="https://github.com/SashaFoxx/fenrir-intro" target="_blank">Start My Coding Journey</a>
     </section>
-    <section>
+    <section id="special">
         <ul>
             <li>Self-motivated and hardworking</li>
             <li>Quick learner</li>
@@ -59,7 +71,8 @@
     </footer>
 
     <section><h2>"Leave a Message"</h2>
-    <form name="leave_message" id="form">
+    <div class="form-container">
+        <form name="leave_message" id="form">
         <label for="usersName">Name:</label><br>
         <input type="text" name="usersName" id="usersName" required="true"><br>
         
