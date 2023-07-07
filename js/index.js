@@ -81,41 +81,44 @@ function toggleFirstCol() {
   });
 
   // Fetch GitHub Repositories
-const githubRequest = new XMLHttpRequest();
-const method = 'GET';
+
 const url = 'https://api.github.com/users/brittney-betzold/repos';
-githubRequest.open(method, url);
-githubRequest.send();
 
-githubRequest.addEventListener('load', function(event) {
-  const repositories = JSON.parse(this.response);
-  console.log(repositories);
+fetch(url)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not OK');
+    }
+    return response.json();
+  })
+  
+  .then(repositories => {
+    console.log(repositories);
 
-  const projectSection = document.getElementById('projects');
-  const projectList = projectSection.querySelector('ul');
+    const projectSection = document.getElementById('projects');
+    const projectList = projectSection.querySelector('ul');
 
-  for (let i = 0; i < repositories.length; i++) {
-    const project = document.createElement('li');
-    const repositoryLink = document.createElement('a');
-    repositoryLink.href = repositories[i].html_url;
-    repositoryLink.textContent = repositories[i].name;
-    project.appendChild(repositoryLink);
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement('li');
+      const repositoryLink = document.createElement('a');
+      repositoryLink.href = repositories[i].html_url;
+      repositoryLink.textContent = repositories[i].name;
+      project.appendChild(repositoryLink);
 
-    const repositoryDescription = document.createElement('p');
-    repositoryDescription.textContent = repositories[i].description;
-    project.appendChild(repositoryDescription);
+      const repositoryDescription = document.createElement('p');
+      repositoryDescription.textContent = repositories[i].description;
+      project.appendChild(repositoryDescription);
 
-    const repositoryDate = document.createElement('p');
-    const createdAt = new Date(repositories[i].created_at);
-    const formattedDate = createdAt.toLocaleDateString(undefined, {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
-    repositoryDate.textContent = 'Created at: ' + formattedDate;
-    project.appendChild(repositoryDate);
+      const repositoryDate = document.createElement('p');
+      const createdAt = new Date(repositories[i].created_at);
+      const formattedDate = createdAt.toLocaleDateString(undefined, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+      repositoryDate.textContent = 'Created at: ' + formattedDate;
+      project.appendChild(repositoryDate);
 
-    projectList.appendChild(project);
-  }
-});
-
+      projectList.appendChild(project);
+    }
+  });
