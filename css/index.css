@@ -45,13 +45,13 @@ body {
 
 .blue {
   background: rgb(150, 150, 241);
-}
+}/*
 .leave_name {
   border-radius:3px;
   border:black
-  width:800px;
+  width : 0cm;
   background: orange;
-}
+}*/
 .body{
   font-size:50px;
 }
