@@ -1,10 +1,13 @@
 //footer date/copyright
-const today = new Date();
-const thisYear = today.getFullYear();
-const footer = document.querySelector("footer");
-const copyright = document.createElement("p");
-copyright.innerHTML = "\u00A9" + "Brittney" + thisYear;
-footer.appendChild(copyright);
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const today = new Date();
+    const thisYear = today.getFullYear();
+    const footer = document.querySelector("footer");
+    const copyright = document.createElement("p");
+    copyright.innerHTML = "\u00A9" + "Brittney" + thisYear;
+    footer.appendChild(copyright);
+  });
 
 const skills = ["HTML", "CSS", "JavaScript", "RegEx","JQuery", "Node.js", "MySql", "MongoDB", "React"]
 
@@ -14,6 +17,7 @@ const skillList = skillsSection.querySelector('ul');
 for(let i = 0; i < skills.length; i++) {
     const skill = document.createElement('li');
     skill.innerText = skills[i];
+    skill.classList.add('skill-item');
     skillList.appendChild(skill);
 }
 //form
@@ -70,16 +74,6 @@ messageList.appendChild(newMessage);
 messageForm.reset();
 });
 
-function toggleFirstCol() {
-    const firstCol = document.querySelector('.firstCol');
-    firstCol.classList.toggle('show-firstCol');
-  }
-
-  const links = document.querySelectorAll('.firstCol a');
-  links.forEach(link => {
-    link.addEventListener('click', toggleFirstCol);
-  });
-
   // Fetch GitHub Repositories
 
 const url = 'https://api.github.com/users/brittney-betzold/repos';
@@ -121,4 +115,10 @@ fetch(url)
 
       projectList.appendChild(project);
     }
-  });
+  })
+.catch(error => {
+    console.log("Error:", error);
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = 'Oops! Something went wrong. Please try again later.';
+    document.body.appendChild(errorMessage);
+});

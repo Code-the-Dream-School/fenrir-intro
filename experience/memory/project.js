@@ -1,5 +1,23 @@
 
 $(()=>{
+
+
+  $('.box').on('click', function clicky(e) {
+    // ...
+    if (count === 2 && card1.getAttribute('data-match') === card2.getAttribute('data-match')) {
+      // Match found
+      score++;
+      $('.score').text(score);
+      picks = [];
+      count = 0;
+    } else if (count === 2 && card1.getAttribute('data-match') !== card2.getAttribute('data-match')) {
+      // No match
+      count = 0;
+      setTimeout(change, 1000);
+    }
+    // ...
+  });
+
 $('.Heading').fadeIn(1000).fadeOut(2000).fadeIn(3000);
 var faces= [];// picture array
 var $img = []; //empty array
@@ -39,10 +57,38 @@ let count=0;
 var $timer = $('.timer');
 
 $('.newgame').on('click', function() {
-  location.reload(true);
-  e.preventDefault();
+resetGame();
+});
+function resetGame() {
+  // Reset variables
+  count = 0;
+  picks = [];
+  score = 0;
+  $('.score').text(score);
 
-});//end of newgame function
+  // Recreate initial game state (assign new images to cards)
+  var faces = [
+    'blueChatter', 'pony', 'blueChatter', 'orangeChatter', 'angry4', 'angry3', 'angry2', 'angry', 'wink', 'monkey',
+    'star', 'devil', 'bigsmile', 'cry', 'angel', 'orangeChatter', 'pony', 'greenChatter', 'greenChatter', 'angry4',
+    'angry3', 'angry2', 'angry', 'wink', 'monkey', 'star', 'devil', 'bigsmile', 'cry', 'angel'
+  ];
+
+  var $divs = $('.box');
+  var $pics = $('.pic');
+
+  // Shuffle the faces array
+  faces = _.shuffle(faces);
+
+  // Assign new images to the cards
+  $divs.each(function (index) {
+    var face = faces[index];
+    $(this).attr('class', 'box').addClass(face);
+  });
+
+  // Restore the original kitty images
+  $pics.show();
+}
+//end of newgame function
             for(let i=faces.length-1;i>=0;i--){
               var r=Math.floor(Math.random()*faces.length);
               $img.push(faces[r]);
