@@ -1,30 +1,40 @@
         /*Lesson-4-5 리스트박스 만들기*/
 header {
+  padding-top: -25px;
   height: 75px;
-  width: 100%;
-  color: rgb(13, 33, 216);
-  background: #d8c689;
+  width: flex;
+  color: rgb(0, 0, 0);
+  background: #f0b104f6;
   font-weight: bold;
   align-items: center;
   display: flex;
   justify-content: space-between; /*how to make more divided?*/
   position: fixed;  /*Position : Fixed*/
   top: 0;
-  left:10px;
+  left:0;
   right:0;
   bottom:30px;
 }
-* {
+/*{
   box-sizing: border-box;
-}
+}*/
 
 body {
+  padding-top: 75px;
   margin: 0;
 }
 
 .experience_container {
+  width : flex;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  border: 5px solid rgb(66, 46, 1);
+}
+.skills_r1 {
+  width : flex;
+  display: flex;
+  text-align: : left;
+  flex-direction: column;
   border: 5px solid rgb(66, 46, 1);
 }
 
@@ -40,12 +50,29 @@ body {
 }
 
 .green {
-  background: rgb(139, 240, 139);
+  background: rgb(241, 245, 241);
 }
 
 .blue {
-  background: rgb(150, 150, 241);
-}/*
+  background: rgb(233, 105, 82);
+}
+
+.project-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  font: 'Times New Roman';
+
+
+}
+.project{
+  text-align: left;
+  list-style: none;
+  font: 'Times New Roman';
+
+}
+/*
 .leave_name {
   border-radius:3px;
   border:black
@@ -56,12 +83,12 @@ body {
   font-size:50px;
 }
     /*Going to be need a mentoring session for @media*/
-@media screen and (max-width:600px){
+@media screen and (max-width:100%){
   .body{
     font-size: 10px;
   }
 }
-@media (min-width:1000px){
+@media (width : 950px){
   .body{
     font-size:15px;
   }
@@ -72,7 +99,7 @@ body {
     background-color: #c3cfc5;
     color: rgb(27, 48, 0);
     font-family : Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 10px;
+    margin-bottom: 0%;
     padding-top : 10px;
     padding-left : 50px;
     
@@ -83,14 +110,15 @@ body {
     font-size : 30px;
     color : rgb(2, 3, 2);
   }
-  p#skills, #about_box, #contact_textbox{
+  p #about_box, #contact_textbox{
     
-       width : 800px;
-       border : 3px solid rgb(0, 10, 51);
-       padding : 10px;
-       margin : 10px;
-  
-  }
+    width : flex;
+    border : 5px solid rgb(0, 10, 51);
+    padding : 10px;
+    margin : 20px;    
+}
+
+
   /*form#name{
     font-size:20px;
     width : 800px;
@@ -118,22 +146,25 @@ body {
     border-radius : 10px;
   }
   button{
-    border-radius : 20px;
+    border-radius : 10px;
     padding-left : 10px;
-    background-color: skyblue;
+    background-color: rgb(49, 179, 235);
+    font: 'Times New Roman';
+    color:blue
   }
   
   ul#messagelists{
     
-    width : 800px;
-    border : 5px solid green;
+    width : flex;
+    border : 5px solid rgb(0, 0, 0);
     padding : 10px;
     margin : 10px;
 
 }
 footer{
-  background-color: yellowgreen;
+  background: #f3e7be;
+  width : 100%;
   font-family:'Courier New', Courier, monospace;
-  font-size : 20px;
-  color : red;
+  font-size : 15px;
+  color : rgb(41, 0, 0);
 }
