@@ -19,10 +19,10 @@ p,
 h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.indent-first-line::first-line {
-  text-indent: 20px;
+.aboutIntro p {
+  text-indent: 2em;
 }
+
 a {
   text-decoration: none;
   color: gray;
@@ -133,8 +133,7 @@ form input {
 }
 
 .mario,
-.kitty,
-.war {
+.kitty {
   height: 50px;
 }
 
@@ -317,8 +316,7 @@ form input {
 }
 
 .mario,
-.kitty,
-.war {
+.kitty{
   height: 50px;
 }
 
@@ -405,5 +403,19 @@ form input {
   content: "\2713"; 
   color: green;
   margin-right: 5px; 
+}
+.linkedin-link {
+  display: flex;
+  align-items: center;
+}
+
+.linkedin-link img {
+  width:80px;
+  margin-left:-120px;
+  margin-bottom:-40px;
+}
+.mail{
+  margin-left:14px;
+  margin-top:5px;
 }
 
