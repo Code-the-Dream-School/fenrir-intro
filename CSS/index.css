@@ -1,8 +1,24 @@
 
 * {
     margin: 0.5rem;
-    padding: 0.5rem;
-    background-color: antiquewhite;
+    padding: 0.3rem;
+    background-color: rgb(247, 237, 225);
+}
+
+nav {
+    position:fixed;
+    top: 0;
+    right: 0;
+}
+nav li {
+    display: inline-block;
+}
+/*style the navigation links*/
+nav a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: rgb(23, 0, 128) 
 }
 
 body {
@@ -10,10 +26,13 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+li {
+    list-style: none;
+}
 .img_div {
     display: flex;
     align-items: center;
-    width: 100rem;
+    width: 10rem;
 }
 h1, h2, h3 {
     color: rgb(6, 6, 7);
@@ -22,8 +41,9 @@ h1, h2, h3 {
 
 
 p {
-    color:olive;
+    color:rgb(13, 20, 223);
     font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -31,9 +51,10 @@ footer {
 }
 
 .experience-container {
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr); 
-    grid-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 #skills li {
@@ -44,11 +65,7 @@ footer {
     display: inline-block;  
 }
 
-#special {
-    text-transform: uppercase;
-    font-style: italic;
 
-}
 #form label {
     color:blue;
     font-size: 1rem;
@@ -79,29 +96,29 @@ button {
 }
 
 .form-container {
+   display: flex;
+   justify-content: flex-start;
+
+}
+#form {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
-    gap: 10px;
-
-}
-/* mobile styles (up to 600px)*/
-@media (max-width: 600px){
-    .form-container {
-        grid-template-columns: 1fr;
-    }
+    align-items: baseline;
+    justify-content: center;
 }
 
-/* tablet styles (601px to 900px)*/
-@media (min-width: 601px) and (max-width: 900px){
-    .form-container {
-        grid-gap: 30px;
+
+
+/* mobile styles (above to 900px)*/
+@media screen and (max-width: 496px){
+    
     }
+
+/* tablets styles */
+@media screen (min-width: 600px) and (max-width: 1200px){
+    
 }
 
-/* decstop styles (above 900px)*/
-@media (min-width: 901px){
-    .form-container {
-        grid-template-columns: 1fr 1fr;
-    }
+/* dekstop styles (above 900px)*/
+@media (min-width: 900px){   
 }
