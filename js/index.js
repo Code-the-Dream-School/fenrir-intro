@@ -6,14 +6,16 @@ const copyright = document.createElement("p")
 copyright.innerHTML = `Aleksandra Folkes &#0169 ${thisYear}`
 footer.appendChild(copyright)
 
-const skills = ["JavaScript", "HTML", "CSS"]
-const skillsSection = document.getElementById("skills")
-const skillsList = skillsSection.querySelector("ul")
+const skills = ["JavaScript", "HTML", "CSS", "Technical writer"]
+const skillsSection = document.getElementById('skills')
+const skillsList = skillsSection.querySelector('ul')
 for (let i = 0; i < skills.length; i++){
-    let skill = document.createElement("li")
+    let skill = document.createElement('li')
     skill.innerHTML = skills[i]
     skillsList.appendChild(skill)
 }
+
+
 //DOM selection
 const messageForm = document.getElementById("form");
 
@@ -45,3 +47,30 @@ messageForm.addEventListener("submit", (e) => {
     messageForm.reset()
 
 })
+
+// adding GitHub links using AJAX
+
+// create an object (client) 
+let githubRequest = new XMLHttpRequest();
+
+// create GET request to fetch API
+githubRequest.open('GET', "https://api.github.com/users/SashaFoxx/repos");
+// send request
+githubRequest.send();
+
+// create an event listener to process request response when it is ready
+
+githubRequest.addEventListener('load', (event) => {
+    //convert JSON to object
+    let repositories = JSON.parse(githubRequest.response)
+    console.log(repositories)
+    let projectSection = document.getElementById('projects')
+    let projectList = projectSection.querySelector('ul')
+    for (let i = 0; i < repositories.length; i++) {
+        let project = document.createElement('li')
+        project.innerHTML += `<a href="${repositories[i].html_url}" target="_blank">${repositories[i].name}</a>`
+        projectList.appendChild(project)
+    }       
+})
+
+
