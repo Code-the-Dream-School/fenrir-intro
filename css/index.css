@@ -33,7 +33,7 @@ body {
 .skills_r1 {
   width : flex;
   display: flex;
-  text-align: : left;
+  text-align: left;
   flex-direction: column;
   border: 5px solid rgb(66, 46, 1);
 }
