@@ -4,7 +4,7 @@ header {
   height: 75px;
   width: flex;
   color: rgb(0, 0, 0);
-  background: #f0b104f6;
+  background: #f1d27df6;
   font-weight: bold;
   align-items: center;
   display: flex;
@@ -46,15 +46,15 @@ body {
 }
 
 .orange {
-  background: rgb(230, 186, 105);
+  background: rgb(211, 148, 32);
 }
 
 .green {
-  background: rgb(241, 245, 241);
+  background: rgb(158, 241, 158);
 }
 
 .blue {
-  background: rgb(233, 105, 82);
+  background: rgb(90, 93, 230);
 }
 
 .project-list{
