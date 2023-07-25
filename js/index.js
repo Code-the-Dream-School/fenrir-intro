@@ -48,7 +48,7 @@ messageForm.addEventListener("submit", (e) => {
 
 })
 
-// adding GitHub links using AJAX
+/*// adding GitHub links using AJAX
 
 // create an object (client) 
 let githubRequest = new XMLHttpRequest();
@@ -71,6 +71,31 @@ githubRequest.addEventListener('load', (event) => {
         project.innerHTML += `<a href="${repositories[i].html_url}" target="_blank">${repositories[i].name}</a>`
         projectList.appendChild(project)
     }       
-})
+})*/
+
+//adding GitHub links using API via Fetch
+
+fetchData();
+
+function fetchData() {
+    fetch('https://api.github.com/users/SashaFoxx/repos')
+    .then(res => res.json())
+    .then(data => {
+        let projectSection = document.getElementById('projects')
+        let projectList = projectSection.querySelector('ul')
+        for (let i = 0; i < data.length; i++) {
+            let project = document.createElement('li')
+            project.innerHTML += `<a href="${data[i].html_url}" target="_blank">${data[i].name}</a>`
+            projectList.appendChild(project)
+
+    }})
+
+    .catch((error) => {
+        console.error("error fetching data:", error)
+            })
+   
+}
+
+
 
 
