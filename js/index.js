@@ -1,34 +1,34 @@
-let today = new Date();
-let thisYear = today.getFullYear();
-let footer = document.querySelector("footer");
-let copyright = document.createElement("p");
+    let today = new Date();
+    let thisYear = today.getFullYear();
+    let footer = document.querySelector("footer");
+    let copyright = document.createElement("p");
 
-//6.1 다시 보고 배울 것
-const projectSection = document.getElementById('projects'); //projects ID를 가진 섹션을 참조한다
-const projectList = projectSection.querySelector('ul');     //
+    //6.1 다시 보고 배울 것
+    const projectSection = document.getElementById('projects'); //projects ID를 가진 섹션을 참조한다
+    const projectList = projectSection.querySelector('ul');     //
 
-fetch('https://api.github.com/users/Chelin-Park/repos')
-.then(response =>response.json())
-.then(repositories => {
-    for(let i = 0; i < repositories.length; i+=1){
-        const project = document.createElement('li');
-        project.classList.add('project');
-        const repositoryName = repositories[i].name;
-        const capitilizeRepositoryName = repositoryName.charAt(0).toUpperCase() + repositoryName.slice(1);
-        project.innerHTML='<a href="'+ repositories[i].html_url +'"target="_blank">' + capitilizeRepositoryName +'</a>';
-        projectList.appendChild(project);
-    }
-})
-.catch(error => {
-    const projectError= document.createElement('p');
-    projectError.classList.add('error');
-    projectError.textContent="Here is error in loading data. Please try again later";
-    projectList.appendChild(projectError);
-})
+    fetch('https://api.github.com/users/Chelin-Park/repos')
+    .then(response =>response.json())
+    .then(repositories => {
+        for(let i = 0; i < repositories.length; i+=1){
+            const project = document.createElement('li');
+            project.classList.add('project');
+            const repositoryName = repositories[i].name;
+            const capitilizeRepositoryName = repositoryName.charAt(0).toUpperCase() + repositoryName.slice(1);
+            project.innerHTML='<a href="'+ repositories[i].html_url +'"target="_blank">' + capitilizeRepositoryName +'</a>';
+            projectList.appendChild(project);
+        }
+    })
+    .catch(error => {
+        const projectError= document.createElement('p');
+        projectError.classList.add('error');
+        projectError.textContent="Here is error in loading data. Please try again later";
+        projectList.appendChild(projectError);
+    })
 
 //4.2
 footer.appendChild(copyright);
-copyright.innerHTML = "Chelin Park"+" "+thisYear;
+copyright.innerHTML = "All copyright of this website is belong to : Chelin Park"+" "+thisYear;
 
 
 //4.3
