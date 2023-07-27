@@ -1,0 +1,185 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  text-decoration: none;
+}
+
+/*sticky nav bar*/
+.sticky {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+a {
+  color: rgb(11, 11, 12);
+}
+
+/*style the navigation links*/
+nav a {
+  background: linear-gradient(blue, green, blue);
+  padding: 10px 10px;
+  text-decoration: none;
+  color: yellow;
+}
+
+body {
+  background-color: rgb(235, 226, 212);
+  color: rgb(4, 3, 4);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+li {
+  list-style: none;
+}
+.img_div {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+}
+
+#about p {
+  color: rgb(23, 23, 212);
+  font-size: 12px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.footer p {
+  background: linear-gradient(blue, green, blue);
+  color: yellow;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.experience-container {
+  border: 2px solid blue;
+  border-radius: 10rem;
+  /*padding: 0.40rem 0.75rem;
+    margin: 0.5rem;*/
+  display: inline-block;
+}
+
+#skills li {
+  border: 2px solid blue;
+  border-radius: 10rem;
+  /*padding: 0.40rem 0.75rem;
+    margin: 0.5rem;*/
+  display: inline-block;
+}
+/* Project section written by AJAX/JSON/FETCH */
+#projects li {
+  list-style-type: none;
+  margin-left: 0.5em;
+  font-style: italic;
+  color: black;
+}
+
+#form label {
+  color: blue;
+  font-size: 1rem;
+}
+#form input,
+textarea {
+  font-size: small;
+  padding: 0.5rem;
+  border: 0.2rem solid green;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: antiquewhite;
+  color: blue;
+  border: 5px solid green;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+#messages li {
+  border: 2px solid blue;
+  border-radius: 5rem;
+  padding: 0.4rem 0.75rem;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+.form-container {
+  display: flex;
+  justify-content: flex-start;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+
+/* mobile styles */
+@media screen and (min-width: 280px) {
+  .content h1 {
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+    padding: 0rem;
+  }
+  .content {
+    margin-left: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    min-height: calc(100vh - 89px);
+  }
+
+  #contact li {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  nav {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  #project li {
+    width: 200%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .img_div {
+    margin-left: 5rem;
+    width: 7rem;
+  }
+}
+/* tablet styles */
+@media screen and (max-width: 1024px) {
+  .content {
+    margin-left: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    min-height: calc(100vh - 89px);
+  }
+  #about p {
+    font-size: 20px;
+  }
+  .experience-container {
+    margin: 0.5rem;
+    padding-left: 1rem;
+  }
+  #skills li {
+    padding: 0.4rem 0.75rem;
+    margin: 0.5rem;
+  }
+
+  /* desktop styles */
+
+  @media (min-width: 1280px) {
+  }
+}

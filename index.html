@@ -2,15 +2,13 @@
 <html>
 
 <head>
-    <title>Aleksandra Folkes</title>
+    <title>Aleksandra Folkes portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="my design, portfolio. Home page">
-    <link rel = "preconnect" href = "https://fontawesome.com/">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-       
-    <link rel="stylesheet" href="css/index.css">
-    <link rel = "stylesheet" href = "css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index1.css">
+    
     <style>
         img{
             border: 2px solid rgb(6, 21, 232);
@@ -33,6 +31,8 @@
         <img class = "img_div" src="image/me.jpg" alt="Aleksandra's headshot">
         
     </header>
+
+    <div class="content">
        
         <section id=about>
                 <h1>About</h1>
@@ -40,7 +40,7 @@
                 quick learner, ability to work independently or as part of a team</p>       
         </section>
             <section id=experience>
-            <h2>Experience</h2>
+            <h1>Experience</h1>
             
             <div class="experience-container">
                 <div class="Item-1">My experience is diverse</div>
@@ -50,26 +50,26 @@
    
    
         <section id="skills">
-            <h3>Skills</h3>
+            <h1>Skills</h1>
             <ul></ul>    
         </section>
 
         <section id="projects">
-            <h3>Projects</h3>
+            <h1>Projects</h1>
             <ul></ul>
         </section>
 
         <section id="contact">
-            <h3>Contact</h3>
-            <ul>
-                
-                <li><a href="mailto:adams41191@yahoo.com">Email</a></li>
-            </ul>
-            
+            <h1>Contact</h1>
+            <div class="fa-3x">
+               <a href="mailto:adams41191@yahoo.com" target="_blank">
+                <i class="fa-sharp fa-solid fa-envelope fa-flip"></i>
+               </a> 
+            </div>    
         </section>
        
             <section>
-                <h2>Leave a Message:</h2>
+                <h1>Leave a Message:</h1>
                 <div class="form-container">    
                  <form name="leave_message" id="form">
                     <label for="usersName">Name:</label>
@@ -83,12 +83,13 @@
                 </div>
 
     <section id="messages">
-        <h2>Messages:</h2>
+        <h1>Messages:</h1>
         <ul></ul>
     </section>
-    <footer>
+    </div>
+        <footer class="footer">
         <p>Code the dream. Fenrir-intro, 2023</p>
-    </footer>
+        </footer>
     
     <script src = "js/index.js"></script>
 </body>
