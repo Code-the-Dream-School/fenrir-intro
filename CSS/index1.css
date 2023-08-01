@@ -1,0 +1,220 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/*sticky nav bar*/
+.sticky {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+a {
+  color: rgb(11, 11, 12);
+}
+
+/*style the navigation links*/
+nav a {
+  background: linear-gradient(blue, green, blue);
+  padding: 10px 10px;
+  text-decoration: none;
+  color: yellow;
+}
+
+body {
+  background-color: rgb(235, 226, 212);
+  color: rgb(4, 3, 4);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+li {
+  list-style: none;
+}
+.img_div {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+}
+
+#about p {
+  color: rgb(23, 23, 212);
+  font-size: 12px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.footer p {
+  background: linear-gradient(blue, green, blue);
+  color: yellow;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.experience-container {
+  display: inline-block;
+  border: 2px solid blue;
+  border-radius: 10rem;
+  /*padding: 0.40rem 0.75rem;
+    margin: 0.5rem;*/
+  padding: 5px 15px;
+}
+
+#skills ul {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+#skills li {
+  display: inline-block;
+  border: 2px solid blue;
+  border-radius: 10rem;
+  padding: 3px 6px;
+}
+/* Project section written by AJAX/JSON/FETCH */
+#projects li {
+  list-style-type: none;
+  margin-left: 0.5em;
+  font-style: italic;
+  color: black;
+}
+
+#form label {
+  color: blue;
+  font-size: 1rem;
+}
+#form input, textarea {
+  width: 100%;
+  font-size: small;
+  padding: 0.5rem;
+  border: 0.2rem solid green;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: antiquewhite;
+  color: blue;
+  border: 5px solid green;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+#messages li {
+  border: 2px solid blue;
+  border-radius: 5rem;
+  padding: 0.4rem 0.75rem;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+.form-container {
+  display: flex;
+  justify-content: flex-start;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+
+/* mobile styles */
+@media screen and (min-width: 280px) {
+  .content h1 h2 h3 {
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+    padding: 0rem;
+  }
+  .content {
+    margin-left: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    font-size: 12px;
+    min-height: calc(100vh - 89px);
+  }
+
+  #contact li {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  nav {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  #project li {
+    width: 200%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .img_div {
+    margin-left: 5rem;
+    width: 7rem;
+  }
+}
+/* tablet styles */
+@media screen and (min-width: 820px) {
+  .content {
+    margin-left: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    font-size: 22px;
+    min-height: calc(100vh - 89px);
+  }
+  #about p {
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
+  .img_div {
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    width: 9rem;
+  }
+
+  .experience-container {
+    margin: 0.5rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+  #skills li {
+    padding: 0.4rem 0.75rem;
+    margin: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  #contact {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  /* desktop styles */
+  @media (min-width: 1024px) {
+    nav li {
+      font-size: 22px;
+    }
+
+    #form input, textarea {
+      width: 300%; 
+      
+    }
+
+    button submit {
+      width: 300%;
+    }
+
+
+
+  }
+}
