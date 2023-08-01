@@ -2,9 +2,13 @@ const today = new Date();
 const thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
 const copyright = document.createElement("p");
+const linkedin = document.createElement("a");
+linkedin.href = "https://www.linkedin.com/in/aleksandra-folkes"
 
 copyright.innerHTML = `Aleksandra Folkes &#0169 ${thisYear}`;
+linkedin.innerHTML = `<i style="color: yellow; margin-left: 6px;" class="fa-brands fa-linkedin"></i>`
 footer.appendChild(copyright);
+copyright.appendChild(linkedin);
 
 const skills = ["JavaScript", "HTML", "CSS", "Technical writer"];
 const skillsSection = document.getElementById("skills");
@@ -30,6 +34,8 @@ messageForm.addEventListener("submit", (e) => {
   console.log("Message:", usersMessage);
   const messageSection = document.getElementById("messages");
   const messageList = messageSection.querySelector("ul");
+  messageList.style.display = "flex";
+  messageList.style.flexWrap = "wrap";
   const newMessage = document.createElement("li");
   newMessage.innerHTML = `<a href="mailto:adams41191@yahoo.com">${usersName}</a>
     <span>wrote: &nbsp${usersMessage}</span>`;
