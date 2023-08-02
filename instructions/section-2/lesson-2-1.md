@@ -15,7 +15,7 @@ This assignment will teach you the following:
 
 ### Getting Started:
 
-Note:  The images show forking of eridanus-intro.  Please use fenrir-repo for this class.  
+Note: The images show forking of eridanus-intro. Please use fenrir-repo for this class.
 
 Fork this GitHub repository to create your own working version:
 
@@ -25,7 +25,7 @@ On the new screen be sure your GitHub username is selected then click the green 
 
 ![Fork Assignment: Step 2](../assets/fork-assignment/fork-step-2.png)
 
-You should be directed to your forked GitHub repository.  You'll know it's yours because your GitHub username will be in the top left instead of Code-the-Dream-School:
+You should be directed to your forked GitHub repository. You'll know it's yours because your GitHub username will be in the top left instead of Code-the-Dream-School:
 
 ![Fork Assignment: Step 3](../assets/fork-assignment/fork-step-3.png)
 
