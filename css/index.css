@@ -1,0 +1,179 @@
+        /*Lesson-4-5 리스트박스 만들기*/
+        header {
+          padding-top: -25px;
+          height: 75px;
+          width: flex;
+          color: rgb(0, 0, 0);
+          background: rgba(234, 186, 248, 0.75); /* 투명도 조정 */
+          font-weight: bold;
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 30px;
+        }
+
+/*{
+  box-sizing: border-box;
+}*/
+
+body{
+  font-family : Georgia, 'Times New Roman', Times, serif;
+  
+  background-color: #fdfdfc;
+  color: #413d36;
+  margin-top:200px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+  /*Going to be need a mentoring session for @media*/
+@media screen and (max-width:100%){
+  .body{
+    font-size: 10px;
+  }
+}
+  /*Width 950px 일 때*/
+@media (width : 950px){
+  .body{
+    font-size:15px;
+  }
+}
+      /*Lesson-4-5 END*/
+
+body {
+    
+    margin-bottom: 0%;
+    padding-top : 10px;
+    padding-left : 50px;
+    
+
+  }
+
+.experience_container {
+  width : flex;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid rgb(66, 46, 1);
+}
+.skills_r1 {
+  width : flex;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  border: 5px solid rgb(66, 46, 1);
+}
+
+.item {
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  padding: 3px;
+  text-align: center;
+}
+
+.orange {
+  background: rgb(211, 148, 32);
+}
+
+.green {
+  background: rgb(230, 54, 0);
+}
+
+.blue {
+  background: rgb(158, 241, 158);
+}
+
+
+
+.project-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  font: 'Times New Roman';
+
+
+}
+.project{
+  text-align: left;
+  list-style: none;
+  font: 'Times New Roman';
+
+}
+/*
+.leave_name {
+  border-radius:3px;
+  border:black
+  width : 0cm;
+  background: orange;
+}*/
+
+
+h1,h2,h3,h4,h5,h6{
+    font-size : 30px;
+    color : rgb(2, 3, 2);
+  }
+  p #about_box, #contact_textbox{
+    
+    width : flex;
+    border : 5px solid rgb(0, 10, 51);
+    padding : 10px;
+    margin : 20px;    
+}
+
+
+  /*form#name{
+    font-size:20px;
+    width : 800px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    background-color: rgb(202, 134, 149);
+    color: black;
+  }*/
+  label{
+    font-size:25px;    
+    color: black;
+  }
+  input{
+    font-size:10px;    
+    color: blue;
+    padding-left : 10px;
+    border-color : black;
+    border-radius : 10px;
+  }
+  textarea{
+    font-size:10px;    
+    color: blue;
+    padding-left : 10px;
+    border-color : black;
+    border-radius : 10px;
+  }
+  button{
+    border-radius : 10px;
+    padding-left : 10px;
+    background-color: rgb(49, 179, 235);
+    font: 'Times New Roman';
+    color:blue
+  }
+  
+  ul#messagelists{
+    
+    width : flex;
+    border : 5px solid rgb(0, 0, 0);
+    padding : 10px;
+    margin : 10px;
+
+}
+footer{
+  background: #f3e7be;
+  width : 100%;
+  font-family:'Courier New', Courier, monospace;
+  font-size : 15px;
+  color : rgb(41, 0, 0);
+}
