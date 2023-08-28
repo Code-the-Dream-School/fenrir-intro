@@ -1,0 +1,139 @@
+        /*Lesson-4-5 리스트박스 만들기*/
+header {
+  height: 75px;
+  width: 100%;
+  color: rgb(13, 33, 216);
+  background: #d8c689;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  justify-content: space-between; /*how to make more divided?*/
+  position: fixed;  /*Position : Fixed*/
+  top: 0;
+  left:10px;
+  right:0;
+  bottom:30px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.experience_container {
+  display: flex;
+  flex-direction: row;
+  border: 5px solid rgb(66, 46, 1);
+}
+
+.item {
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  padding: 3px;
+  text-align: center;
+}
+
+.orange {
+  background: rgb(230, 186, 105);
+}
+
+.green {
+  background: rgb(139, 240, 139);
+}
+
+.blue {
+  background: rgb(150, 150, 241);
+}/*
+.leave_name {
+  border-radius:3px;
+  border:black
+  width : 0cm;
+  background: orange;
+}*/
+.body{
+  font-size:50px;
+}
+    /*Going to be need a mentoring session for @media*/
+@media screen and (max-width:600px){
+  .body{
+    font-size: 10px;
+  }
+}
+@media (min-width:1000px){
+  .body{
+    font-size:15px;
+  }
+}
+      /*Lesson-4-5 END*/
+
+body {
+    background-color: #c3cfc5;
+    color: rgb(27, 48, 0);
+    font-family : Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    padding-top : 10px;
+    padding-left : 50px;
+    
+
+  }
+
+  h1, h2{
+    font-size : 30px;
+    color : rgb(2, 3, 2);
+  }
+  p#skills, #about_box, #contact_textbox{
+    
+       width : 800px;
+       border : 3px solid rgb(0, 10, 51);
+       padding : 10px;
+       margin : 10px;
+  
+  }
+  /*form#name{
+    font-size:20px;
+    width : 800px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    background-color: rgb(202, 134, 149);
+    color: black;
+  }*/
+  label{
+    font-size:25px;    
+    color: black;
+  }
+  input{
+    font-size:15px;    
+    color: blue;
+    padding-left : 10px;
+    border-color : black;
+    border-radius : 10px;
+  }
+  textarea{
+    font-size:15px;
+    color: blue;
+    padding-left : 10px;
+    border-radius : 10px;
+  }
+  button{
+    border-radius : 20px;
+    padding-left : 10px;
+    background-color: skyblue;
+  }
+  
+  ul#messagelists{
+    
+    width : 800px;
+    border : 5px solid green;
+    padding : 10px;
+    margin : 10px;
+
+}
+footer{
+  background-color: yellowgreen;
+  font-family:'Courier New', Courier, monospace;
+  font-size : 20px;
+  color : red;
+}
