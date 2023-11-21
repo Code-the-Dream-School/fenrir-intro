@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <!-- <title>Bootstrap demo</title> -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,13 +14,22 @@
   <body>
     <h1>Olena Borysonok</h1>
     <h2>About</h2>
-    <h2>I am an awesome person!</h2>
-    <h2>Experience</h2>
-    <h2>My Experience.....</h2>
-    <h2>Connect</h2>
-    <h2>Email: email@email.com.</h2>
+    <p>I am an awesome person!</p>
+    <h1>Experience</h1>
+    <p></p>
+    <h1>My Experience.....</h1>
+    <p></p>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul></ul>
+    </section>
 
-    <script
+    <h1>Connect</h1>
+    <p></p>
+    <h1>Email: email@email.com.</h1>
+    <p></p>
+
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
@@ -32,6 +41,25 @@
         <div class="col">One of three columns</div>
         <div class="col">One of three columns</div>
       </div>
-    </div>
+    </div> -->
+    <section>
+      <h2>Leave a Message</h2>
+      <form name="leave_message">
+        <label>Name</label><br>
+        <input type="text", name="usersName", required="true"/><br>
+        <label>Email</label><br>
+        <input type="email", name="usersEmail", required="true"/><br>
+        <label>Message</label><br>
+        <textarea name="usersMessage", required="true"></textarea><br>
+        <label></label><br>
+        <button name="Submit",type="submit">Submit</button><br>
+      </form>
+    </section>
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
+    </section>
+    <footer></footer>
+    <script src="index.js"></script>
   </body>
 </html>
