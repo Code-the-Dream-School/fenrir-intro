@@ -16,9 +16,7 @@
     <h2>About</h2>
     <p>I am an awesome person!</p>
     <h1>Experience</h1>
-    <p></p>
-    <h1>My Experience.....</h1>
-    <p></p>
+    <p>My Experience.....</p>
     <section id="skills">
       <h2>Skills</h2>
       <ul></ul>
@@ -42,24 +40,34 @@
         <div class="col">One of three columns</div>
       </div>
     </div> -->
+
+    <!-- Message Form Section -->
     <section>
       <h2>Leave a Message</h2>
+      <br />
+
       <form name="leave_message">
-        <label>Name</label><br>
-        <input type="text", name="usersName", required="true"/><br>
-        <label>Email</label><br>
-        <input type="email", name="usersEmail", required="true"/><br>
-        <label>Message</label><br>
-        <textarea name="usersMessage", required="true"></textarea><br>
-        <label></label><br>
-        <button name="Submit",type="submit">Submit</button><br>
+        <label for="usersName">Name</label><br />
+        <input type="text" name="usersName" id="usersName" required /><br />
+
+        <label for="usersEmail">Email Addres</label><br />
+        <input type="email" name="usersEmail" id="usersEmail" required /><br />
+
+        <label for="usersMessage">Message</label><br />
+        <textarea name="usersMessage" id="usersMessage" required></textarea
+        ><br />
+
+        <button type="submit">Submit</button><br />
       </form>
     </section>
+
+    <!-- Message List Section -->
+
     <section id="messages">
       <h2>Messages</h2>
       <ul></ul>
     </section>
     <footer></footer>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
